@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApnaMart Food Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 ApnaMart Food Corner</h1>
+        <p>Fresh Food, Fast Delivery</p>
+    </header>
+
+    <section class="menu">
+
+        <div class="item">
+            <img src="images/burger.jpg" alt="Burger">
+            <h2>Burger</h2>
+            <p>₹120</p>
+            <button onclick="addToCart('Burger',120)">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/pizza.jpg" alt="Pizza">
+            <h2>Pizza</h2>
+            <p>₹250</p>
+            <button onclick="addToCart('Pizza',250)">Add to Cart</button>
+        </div>
+
+        <div class="item">
+            <img src="images/momos.jpg" alt="Momos">
+            <h2>Momos</h2>
+            <p>₹90</p>
+            <button onclick="addToCart('Momos',90)">Add to Cart</button>
+        </div>
+
+    </section>
+
+    <section class="cart">
+        <h2>🛒 Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <h3>Total: ₹<span id="total">0</span></h3>
+        <button id="order-btn">Place Order</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
